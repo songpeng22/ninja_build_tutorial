@@ -1,0 +1,10 @@
+cflags = -Wall -Werror
+
+rule cc
+  command = gcc $in -o $out
+#rule clean
+#  command = rm $out
+
+# If left unspecified, builds get the outer $cflags.
+build main: cc main.c
+

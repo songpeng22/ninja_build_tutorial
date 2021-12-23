@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# ninja build intermediate files
+.ninja_deps
+.ninja_log
